@@ -10,8 +10,8 @@ Case courtesy of Assoc Prof Frank Gaillard, <a href="https://radiopaedia.org/">R
 
 ```
 $ python predict.py savedmodels/augment images/sample-*.jpeg
-images/sample-gbm.jpeg 100.00 % GBM
-images/sample-pcnsl.jpeg 100.00 % PCNSL
+images/sample-gbm.jpeg                   100.00 % GBM
+images/sample-pcnsl.jpeg                 100.00 % PCNSL
 ```
 
 _Note: the saved models are not part of this repository. Please contact the authors for access to the models._

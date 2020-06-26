@@ -32,7 +32,7 @@ def get_image(file_path):
 
 def predict_on_images(file_paths):
     model = tf.keras.models.load_model(model_path, compile=False)
-    s = "{: <20} {:.02f} % {}"
+    s = "{: <40} {:.02f} % {}"
     for file_path in file_paths:
         img = get_image(file_path)
         prob_pcnsl = model.predict(img[None])
