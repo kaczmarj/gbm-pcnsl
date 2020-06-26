@@ -2,6 +2,10 @@
 
 Classify between glioblastoma (GBM) and primary central nervous system lymphoma (PCNSL) in contrast-enhanced T1-weighted MRI.
 
+```diff
+! CAUTION: this tool is not a medical product and is only intended for research purposes.
+```
+
 Glioblastoma       |  Primary central nervous system lymphoma
 :-----------------:|:----------------------------------------:
 ![Glioblastoma](images/sample-gbm.jpeg)  |  ![Primary central nervous system lymphoma](images/sample-pcnsl.jpeg)
