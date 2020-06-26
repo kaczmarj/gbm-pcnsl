@@ -2,10 +2,25 @@
 
 Classify between glioblastoma (GBM) and primary central nervous system lymphoma (PCNSL) in contrast-enhanced T1-weighted MRI.
 
+Glioblastoma       |  Primary central nervous system lymphoma
+:-----------------:|:----------------------------------------:
+![Glioblastoma](images/sample-gbm.jpeg)  |  ![Primary central nervous system lymphoma](images/sample-pcnsl.jpeg)
+
+<sub>Left: Case courtesy of Assoc Prof Frank Gaillard, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/5565">rID: 5565</a> Right: Case courtesy of Dr Bruno Di Muzio, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/64657">rID: 64657</a></sub>
+
+```
+$ python predict.py savedmodels/augment images/sample-*.jpeg
+images/sample-gbm.jpeg 100.00 % GBM
+images/sample-pcnsl.jpeg 100.00 % PCNSL
+```
+
+_Note: the saved models are not part of this repository. Please contact the authors for access to the models._
+
+
 # Method
 
 1. Data were originally in PNG format.
-2. PNGs were processed and saved to HDF5 using the Jupyter Noteook `convert_to_hdf5.ipynb`.
+2. PNGs were processed and saved to HDF5 using the Jupyter Noteook `convert_images_to_hdf5.py`.
 3. [EfficientNetB4](https://arxiv.org/abs/1905.11946) (published in ICML 2019) architecture was used to classify between GBM and PCNSL.
     - Model implemented in `keras_applications` and accessed with tensorflow.
     - Model was trained using the script `train_efficientnetb4.py`.
