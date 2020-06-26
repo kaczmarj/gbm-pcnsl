@@ -5,8 +5,8 @@ Classify between glioblastoma (GBM) and primary central nervous system lymphoma 
 Glioblastoma       |  Primary central nervous system lymphoma
 :-----------------:|:----------------------------------------:
 ![Glioblastoma](images/sample-gbm.jpeg)  |  ![Primary central nervous system lymphoma](images/sample-pcnsl.jpeg)
+Case courtesy of Assoc Prof Frank Gaillard, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/5565">rID: 5565</a>. | Case courtesy of Dr Bruno Di Muzio, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/64657">rID: 64657</a>.
 
-<sub>Left: Case courtesy of Assoc Prof Frank Gaillard, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/5565">rID: 5565</a> Right: Case courtesy of Dr Bruno Di Muzio, <a href="https://radiopaedia.org/">Radiopaedia.org</a>. From the case <a href="https://radiopaedia.org/cases/64657">rID: 64657</a></sub>
 
 ```
 $ python predict.py savedmodels/augment images/sample-*.jpeg
